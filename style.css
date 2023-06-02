@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: helvetica;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+
+.register-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 700px;
+    width: 650px;
+    margin: 57px auto;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+.form__title {
+    display: block;
+    width: 350px;
+    font-weight: bold;
+}
+
+.form__field {
+    position: static;
+    margin: 1rem 0;
+    width: 300px;
+    height: 30px;
+    padding: 1rem;
+    border: none;
+}
+
+.form__field:last-of-type {
+    display: none;
+}
+
+.form__label {
+    display: block;
+    text-align: left;
+    position: relative;
+    top: -25px;
+    left: 10px;
+    cursor: text;
+    transition: all ease .5s;
+}
+
+.form__input {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.form__input:focus ~ .form__label {
+    top: -50px;
+}
+
+.form__input::placeholder {
+    opacity: 0;
+}
+
+.form__input:not(:placeholder-shown) ~ .form__label {
+    position: relative;
+    top: -50px;
+  }
+
+.bi-eye, .bi-eye-slash {
+    position: relative;
+    top: -45px;
+    right: -140px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.submit__btn {
+    text-decoration: none;
+    color: #eee;
+    padding: 8px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #333;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.submit__btn:hover {
+    background-color: #eee;
+    color: #333;
+}
