@@ -6,8 +6,8 @@ Simple signup form using only html, css and vanilla javascript builded to improv
 
 ![Signup form!](Signup-form.png)
 
-
 ## Try it!
+
 ### [Live Demo](https://mlorente13.github.io/Signup-Form/)
 
 <div align="center">
